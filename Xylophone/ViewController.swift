@@ -24,6 +24,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            return .allBut
+//        } else {
+//            return .all
+//        }
+//    }
+    
     @IBAction func notePressed(_ sender: UIButton) {
     
         playSound(soundArray[sender.tag - 1])
